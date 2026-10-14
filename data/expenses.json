@@ -1,0 +1,32 @@
+[
+    {
+        "amount": 100.0,
+        "currency": "USD",
+        "category": "travel"
+    },
+    {
+        "amount": 300.0,
+        "currency": "NPR",
+        "category": "food"
+    },
+    {
+        "amount": 1200.0,
+        "currency": "NPR",
+        "category": "food"
+    },
+    {
+        "amount": 800.0,
+        "currency": "INR",
+        "category": "shopping"
+    },
+    {
+        "amount": 450.0,
+        "currency": "NPR",
+        "category": "food"
+    },
+    {
+        "amount": 500.0,
+        "currency": "USD",
+        "category": "shopping"
+    }
+]
