@@ -54,8 +54,9 @@ expense_tracker/
 1. Clone the repository and go into the folder:
 
    ```bash
-   git clone <your-repo-url>
-   cd expense_tracker
+   git clone https://github.com/Aneeshamalla/expense-tracker.git
+   cd expense-tracker
+
    ```
 
 2. Create and activate a virtual environment:
@@ -154,8 +155,11 @@ INR: 800.0
 7. Email report
 8. Exit
 Choose an option: 7
-Report sent to anisha.077bca035@acem.edu.np!
+Report sent to receiver@example.com!
 ```
+<img width="362" height="275" alt="image" src="https://github.com/user-attachments/assets/36d82486-6dcd-40df-b966-e7bcaad8adeb" />
+
+
 
 The email that arrives has the subject **Your Expense Report** and contains the same category report:
 
