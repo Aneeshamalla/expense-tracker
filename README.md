@@ -19,15 +19,15 @@ If the API is slow, down or rate-limited, the app retries and shows a clear mess
 
 ## Concepts Used
 
-| Concept | Where it is used |
-|---|---|
+| Concept                     | Where it is used                                                                                                      |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | Data types and dictionaries | Each expense is a dictionary. The report builds nested dictionaries such as `{"food": {"total": 1650.0, "count": 2}}` |
-| HTTP requests | `requests.get()` calls the exchange rate API with a 5-second timeout |
-| Exception handling | `try`/`except` for network errors, bad JSON, missing data, invalid user input, file errors and email errors |
-| JSON | Parses the API response and saves and loads expenses from `data/expenses.json` |
-| File I/O | Reads and writes the expenses file with `pathlib` and `open()` |
-| Environment variables | The API key and email login are read from `.env` with `python-dotenv` |
-| Modular structure | Each file in `src/` has one job: menu, expenses, conversion, report, storage or email |
+| HTTP requests               | `requests.get()` calls the exchange rate API with a 5-second timeout                                                  |
+| Exception handling          | `try`/`except` for network errors, bad JSON, missing data, invalid user input, file errors and email errors           |
+| JSON                        | Parses the API response and saves and loads expenses from `data/expenses.json`                                        |
+| File I/O                    | Reads and writes the expenses file with `pathlib` and `open()`                                                        |
+| Environment variables       | The API key and email login are read from `.env` with `python-dotenv`                                                 |
+| Modular structure           | Each file in `src/` has one job: menu, expenses, conversion, report, storage or email                                 |
 
 ## Project Structure
 
@@ -144,8 +144,17 @@ INR: 800.0
 **Email report**
 
 ```
+===== Expense Tracker =====
+1. Add expense
+2. View expenses
+3. Update expense
+4. Delete expense
+5. View in NPR
+6. Category report
+7. Email report
+8. Exit
 Choose an option: 7
-Report sent to receiver@example.com!
+Report sent to anisha.077bca035@acem.edu.np!
 ```
 
 The email that arrives has the subject **Your Expense Report** and contains the same category report:
