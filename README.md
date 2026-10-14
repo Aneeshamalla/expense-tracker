@@ -94,19 +94,102 @@ expense_tracker/
 
 **Menu and adding an expense**
 
-<!-- Add screenshot here -->
+```
+===== Expense Tracker =====
+1. Add expense
+2. View expenses
+3. Update expense
+4. Delete expense
+5. View in NPR
+6. Category report
+7. Email report
+8. Exit
+Choose an option: 1
+Enter amount: 500
+Enter currency (NPR/USD/INR): usd
+Enter category: shopping
+Added: 500.0 USD - shopping
+```
 
 **View in NPR**
 
-<!-- Add screenshot here -->
+```
+Choose an option: 5
+1. 100.0 USD = 15250.88 NPR - travel
+2. 300.0 NPR = 300.0 NPR - food
+3. 1200.0 NPR = 1200.0 NPR - food
+4. 800.0 INR = 1280.0 NPR - shopping
+5. 450.0 NPR = 450.0 NPR - food
+6. 500.0 USD = 76254.38 NPR - shopping
+Total: 94735.26 NPR
+```
 
 **Category report**
 
-<!-- Add screenshot here -->
+```
+Choose an option: 6
+
+--- Spending by Category ---
+shopping: 77534.38 NPR (81.8%, 2 expenses)
+travel: 15250.88 NPR (16.1%, 1 expenses)
+food: 1950.0 NPR (2.1%, 3 expenses)
+Grand Total: 94735.26 NPR
+
+--- Spent in Each Currency ---
+USD: 600.0
+NPR: 1950.0
+INR: 800.0
+```
+
+**Email report**
+
+```
+Choose an option: 7
+Report sent to receiver@example.com!
+```
+
+The email that arrives has the subject **Your Expense Report** and contains the same category report:
+
+```
+--- Spending by Category ---
+shopping: 77534.38 NPR (81.8%, 2 expenses)
+travel: 15250.88 NPR (16.1%, 1 expenses)
+food: 1950.0 NPR (2.1%, 3 expenses)
+Grand Total: 94735.26 NPR
+
+--- Spent in Each Currency ---
+USD: 600.0
+NPR: 1950.0
+INR: 800.0
+```
 
 **Error handling**
 
-<!-- Add screenshot here -->
+```
+Choose an option: 1
+Enter amount: abc
+Invalid input: Amount must be a number
+
+Choose an option: 1
+Enter amount: 100
+Enter currency (NPR/USD/INR): EUR
+Invalid input: Currency must be one of ['NPR', 'USD', 'INR']
+
+Choose an option: 4
+1. 100.0 USD - travel
+2. 300.0 NPR - food
+3. 1200.0 NPR - food
+4. 800.0 INR - shopping
+5. 450.0 NPR - food
+6. 500.0 USD - shopping
+Enter expense number to delete: 8
+Invalid input: Number must be between 1 and 6
+
+Choose an option: 9
+Invalid choice. Please try again.
+```
+
+Exchange rates change every day, so your numbers will be different.
 
 ## Security
 
